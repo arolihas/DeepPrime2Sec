@@ -10,8 +10,9 @@ import numpy as np
 
 np.random.seed(7)
 from keras.models import Model
-from keras.layers import Dense, CuDNNLSTM, Bidirectional, Input, Dropout, concatenate, Conv1D, \
+from keras.layers import Dense, Bidirectional, Input, Dropout, concatenate, Conv1D, \
     BatchNormalization
+from tensorflow.compat.v1.keras.layers import CuDNNLSTM
 from keras.layers.wrappers import TimeDistributed
 from layers.crf import ChainCRF
 from layers.utility import slice_tensor

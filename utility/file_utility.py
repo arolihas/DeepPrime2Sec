@@ -5,7 +5,6 @@ import os
 import h5py
 import numpy as np
 from Bio import SeqIO
-from Bio.Alphabet import generic_dna
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from scipy import sparse
